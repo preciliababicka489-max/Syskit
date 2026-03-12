@@ -1,0 +1,4 @@
+#/bin/bash
+echo "Système d'exploitation :"
+cat /etc/os-release |  grep 
+PRETTY_NAME
