@@ -8,3 +8,6 @@ uname -r
 
 echo "Processeur :"
 lscpu | grep "Model name"
+
+echo "Mémoire RAM:"
+free -h
