@@ -14,3 +14,6 @@ free -h
 
 echo "Espace disque :"
 df -h /
+
+echo "Adresse IP:"
+hostname  -I
