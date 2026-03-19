@@ -5,3 +5,6 @@ grep PRETTY_NAME /etc/os-release
 
 echo "Version du noyau Linux"
 uname -r
+
+echo "Processeur :"
+lscpu | grep "Model name"
