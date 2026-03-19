@@ -11,3 +11,6 @@ lscpu | grep "Model name"
 
 echo "Mémoire RAM:"
 free -h
+
+echo "Espace disque :"
+df -h /
