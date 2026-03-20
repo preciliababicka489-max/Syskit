@@ -7,3 +7,10 @@ then
 	exit 1
 fi
 
+#Vérifier que le chemin est fourni 
+if [ -z "$2" ];
+then
+	echo "usage : ./syskit.sh cleanup <chemin>"
+	exit 1
+fi
+
