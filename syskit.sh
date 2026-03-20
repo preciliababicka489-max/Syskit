@@ -7,7 +7,7 @@ case "$1" in
 		./modules/backup.sh "$1" "$2"
 		;;
         cleanup)
-		./modules/cleanup.sh
+		./modules/cleanup.sh "$1" "$2"
 		;;
 	report)
 		./modules/report.sh
