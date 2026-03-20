@@ -25,4 +25,7 @@ NAME=$(basename "$1")
 # Ajouter la date
 DATE=$(date + %Y-%m%-%d)
 
+# Créer l'archive .tar
+tar -cf "../backup/${NAME}_$DATE.tar" "$1"
+
 
