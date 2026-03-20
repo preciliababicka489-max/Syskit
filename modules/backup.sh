@@ -18,3 +18,7 @@ fi
 
 # Créer le dossier s'il n'existe pas
  mkdir -p ../backup
+
+# Récupérer le nom du dossier
+NAME=$(basename "$1")
+
