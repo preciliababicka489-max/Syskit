@@ -21,3 +21,20 @@ if [ ! -d "$2" ];
 		exit 1
 fi
 
+COUNT=0
+
+#Parcours des fichiers du dossier
+ for file in "$2"/*; 
+do 
+
+#Vérifier si le fichier est un .tmp ou .log
+if [[ "$file" == *.tmp || "$file" == *.log ]];
+then
+	rm -f "$file" 
+	echo "supprimé: $file"
+#Compteur 
+COUNT=$((COUNT+1))
+fi
+done 
+
+
