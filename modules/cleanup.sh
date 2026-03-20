@@ -37,4 +37,5 @@ COUNT=$((COUNT+1))
 fi
 done 
 
-
+#Résultat final
+echo "Nombre de fichiers supprimés est : $COUNT"
