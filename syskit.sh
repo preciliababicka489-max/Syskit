@@ -4,7 +4,7 @@ case "$1" in
 		./modules/inventory.sh
 		;;
 	backup)
-		./modules/backup.sh
+		./modules/backup.sh "$1" "$2"
 		;;
         cleanup)
 		./modules/cleanup.sh
