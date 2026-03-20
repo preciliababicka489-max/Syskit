@@ -28,4 +28,12 @@ DATE=$(date + %Y-%m%-%d)
 # Créer l'archive .tar
 tar -cf "../backup/${NAME}_$DATE.tar" "$1"
 
+# Vérifier si la commande a réussi
+if 
+	[ $? -eq 0 ];
+then
+	echo "Sauvegarde réussie: ${NAME}_$DATE.tar"
+else
+	echo "Erreur lors de la sauvegarde"
+fi
 
