@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Vérifier que la commande est bien cleanup
+if [ "$1" != "cleanup" ];
+then
+	echo "usage : ./syskit.sh cleanup <chemin>"
+	exit 1
+fi
+
