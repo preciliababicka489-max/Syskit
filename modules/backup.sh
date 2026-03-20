@@ -15,3 +15,6 @@ then
 	echo "Erreur: le dossier n'existe pas"
 	exit 1
 fi
+
+# Créer le dossier s'il n'existe pas
+ mkdir -p ../backup
