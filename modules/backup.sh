@@ -22,3 +22,7 @@ fi
 # Récupérer le nom du dossier
 NAME=$(basename "$1")
 
+# Ajouter la date
+DATE=$(date + %Y-%m%-%d)
+
+
