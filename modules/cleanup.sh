@@ -14,3 +14,10 @@ then
 	exit 1
 fi
 
+#Vérifier que le dossier existe
+if [ ! -d "$2" ];
+	then
+		echo "erreur: le dossier n'existe pas"
+		exit 1
+fi
+
