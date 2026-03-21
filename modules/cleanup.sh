@@ -38,4 +38,6 @@ fi
 done 
 
 #Résultat final
-echo "Nombre de fichiers supprimés est : $COUNT"
+echo "Nombre de fichiers supprimés est : $COUNT" > logs/cleanup.log
+
+
