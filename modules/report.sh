@@ -38,3 +38,8 @@ cat logs/cleanup.log >> "$REPORT_FILE"
 else
 	echo "Aucune information de nettoyage" >> "$REPORT_FILE"
 fi
+
+#Affichage finale
+
+echo ""
+echo "Rapport généré avec succès !"
