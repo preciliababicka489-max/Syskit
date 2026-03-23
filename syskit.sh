@@ -1,7 +1,7 @@
 #!/bin/bash
 case "$1" in
 	inventory)
-		./modules/inventory.sh
+		./modules/inventory.sh "$1"
 		;;
 	backup)
 		./modules/backup.sh "$1" "$2"
@@ -10,7 +10,7 @@ case "$1" in
 		./modules/cleanup.sh "$1" "$2"
 		;;
 	report)
-		./modules/report.sh
+		./modules/report.sh "$1"
 		;;
 	*)
 		echo "Commande invalide"
